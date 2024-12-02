@@ -41,6 +41,12 @@ export default function AuthenticatedLayout({ children }) {
                                 >
                                     Dashboard
                                 </NavLink>
+                                <NavLink
+                                    href={route('penduduk')}
+                                    active={route().current('penduduk')}
+                                >
+                                    Penduduk
+                                </NavLink>
                             </div>
                         </div>
                         
@@ -159,6 +165,12 @@ export default function AuthenticatedLayout({ children }) {
                             active={route().current('dashboard')}
                         >
                             Dashboard
+                        </ResponsiveNavLink>
+                        <ResponsiveNavLink
+                            href={route('penduduk')}
+                            active={route().current('penduduk')}
+                        >
+                            Penduduk
                         </ResponsiveNavLink>
                     </div>
 
